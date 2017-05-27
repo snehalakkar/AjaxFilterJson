@@ -1,0 +1,39 @@
+
+  
+        <tr>
+       		<th>First Name</th>
+       		<th>Last Name</th>
+       		<th>  Email </th>
+       		<th>  Address </th>
+       		<th> comp_name </th
+       		><th> Age</th>
+       		<th> Salary  </th>
+       		<th> Gender </th>
+       		<th> specialize </th>
+       		<th> lang_known </th>
+       		<th> Password </th>
+       		<th> Contact </th>
+       		<th> UserId </th>
+        </tr>
+
+<%
+         for(Object o1:rows)
+         {
+        	ArrayList al=(ArrayList)o1;
+        %>
+        	<tr>
+        <%
+        	for(Object o2:al)
+        	{
+        %>
+        	<td>${o2}</td>
+        <%
+       		 }
+        %>
+        
+        </tr>
+        
+        <%
+         }
+     }
+%>
